@@ -1,0 +1,60 @@
+<div class="giscus-comments" id="giscus-comments">
+  <script nonce="DhcnhD3khTMePgXw">
+    function getGiscusTheme() {
+      const giscusTheme = localStorage.getItem('pref-theme');
+      return giscusTheme == 'light' ? 'noborder_light' : 'noborder_dark';
+    }
+
+    function setGiscusTheme() {
+      function sendMessage(message) {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage(
+          { giscus: message },
+          'https://giscus.app'
+        );
+      }
+      sendMessage({
+        setConfig: {
+          theme: getGiscusTheme(),
+        },
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const giscusAttributes = {
+        src: 'https://giscus.app/client.js',
+        'data-repo': 'daniel0liver/daniel0liver.github.io',
+        'data-repo-id': 'R_kgDOKPW_0Q',
+        'data-category': 'General',
+        'data-category-id': 'DIC_kwDOKPW_0c4CZH1L',
+        'data-mapping': 'pathname',
+        'data-strict': '1',
+        'data-reactions-enabled': '1',
+        'data-emit-metadata': '0',
+        'data-input-position': 'bottom',
+        'data-theme': getGiscusTheme(),
+        'data-lang': 'en',
+        crossorigin: 'anonymous',
+        'data-loading': 'lazy',
+        async: '',
+      };
+
+      const giscusScript = document.createElement('script');
+      Object.entries(giscusAttributes).forEach(([key, value]) =>
+        giscusScript.setAttribute(key, value)
+      );
+
+      const section = document.querySelector('.giscus-comments');
+      section.appendChild(giscusScript);
+
+      const toggleButton = document.querySelector('#theme-toggle');
+      if (toggleButton) {
+        toggleButton.addEventListener('click', setGiscusTheme);
+      }
+    });
+  </script>
+</div>
+<noscript>
+  <p class="ctr legal">Commenting feature requires activation of JavaScript.</p>
+</noscript>
