@@ -3,7 +3,7 @@ theme: PaperMod
 # Root settings
 paginate: 5
 title: Daniel Oliveira
-baseURL: https://examplesite.com/
+baseURL: https://daniel0liver.github.io/
 enableEmoji: true
 buildDrafts: false
 buildFuture: false
@@ -96,10 +96,10 @@ params:
       - name: Linkedin
         url: https://www.linkedin.com/in/daniel0liver
 
-    editPost:
-      appendFilePath: true 
-      Text: "Suggest Changes"
-      URL: "https://github.com/daniel0liver/danieloliveira.com/tree/main/content"
+    # editPost:
+    #   appendFilePath: true 
+    #   Text: "Suggest Changes"
+    #   URL: "https://github.com/daniel0liver/danieloliveira.com/tree/main/content"
 
     # label:
     #   text: "Home"
