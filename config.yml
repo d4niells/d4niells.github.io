@@ -1,0 +1,171 @@
+theme: PaperMod
+
+# Root settings
+paginate: 5
+title: Daniel Oliveira
+baseURL: https://examplesite.com/
+enableEmoji: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableRobotsTXT: true
+pygmentsUseClasses: true
+enableInlineShortcodes: true
+# googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: false
+
+# Language settings
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      tag: tags
+      series: series
+      category: categories
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 2
+        - name: Archive
+          url: archives
+          weight: 3
+        - name: Tags
+          url: tags/
+          weight: 4
+
+# Output files settings
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+    env: production
+    author: Daniel Oliveira
+    description: I'd like to share some insights on software engineering and write some code, although bugs are always a possibility.
+
+    # Theme settings
+    defaultTheme: auto
+    disableThemeToggle: false    
+
+    # Posts settings
+    ShowToc: true
+    comments: false
+    ShowReadingTime: true
+    ShowBreadCrumbs: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowCodeCopyButtons: true
+    displayFullLangName: true
+    disableSpecial1stPost: false
+    ShowRssButtonInSectionTermList: true
+    # images: ["papermod-cover.png"]
+
+    # Mode - Home info
+    homeInfoParams:
+      Title: How's it going?
+      Content: Welcome to the jungle
+
+    # Mode - Profile
+    # profileMode:
+    #   enabled: false
+    #   title: Profile title
+    #   subtitle: Profile subtitle
+    #   imageUrl: Profile image url
+    #   imageTitle: Profile image alt text
+    #   imageWidth: 120
+    #   imageHeight: 120
+    #   buttons:
+    #     - name: Tags
+    #       url: tags
+    #     - name: Archives
+    #       url: archives
+
+    # Social icons
+    socialIcons:
+      - name: Github
+        url: https://github.com/Daniel0liver
+      - name: Twitter
+        url: https://twitter.com/daniel0liveir4
+      - name: Linkedin
+        url: https://www.linkedin.com/in/daniel0liver
+
+    editPost:
+      appendFilePath: true 
+      Text: "Suggest Changes"
+      URL: "https://github.com/daniel0liver/danieloliveira.com/tree/main/content"
+
+    # label:
+    #   text: "Home"
+    #   icon: icon.png
+    #   iconHeight: 35
+
+    # analytics:
+    #   google:
+    #     SiteVerificationTag: "XYZabc"
+
+    assets:
+      disableHLJS: true
+      # favicon: "<link / abs url>"
+      # favicon16x16: "<link / abs url>"
+      # favicon32x32: "<link / abs url>"
+      # apple_touch_icon: "<link / abs url>"
+      # safari_pinned_tab: "<link / abs url>"
+
+    # cover:
+    #   hidden: true # hide everywhere but not in structured data
+    #   hiddenInList: true # hide on list pages and home
+    #   hiddenInSingle: true # hide on single page
+
+    fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+      keys: ["title", "permalink", "summary", "content"]
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+      anchorLineNos: false
+      codeFences: true
+      guessSyntax: true
+      lineNos: true
+      noClasses: false
+      style: dracula
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+    
+  twitter:
+    disableInlineCSS: true
