@@ -1,5 +1,8 @@
 server:
 	hugo server
 
-update_module:
+init_sub:
 	git submodule update --init --recursive
+
+update_sub:
+	git submodule update --remote --merge
