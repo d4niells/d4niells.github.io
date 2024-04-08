@@ -48,7 +48,7 @@ outputs:
 params:
     env: production
     author: Daniel Oliveira
-    description: I'd like to share some insights on software engineering and write some code, although bugs are always a possibility.
+    description: Sharing some cool stuff and opinions about software engineering.
 
     # Theme settings
     defaultTheme: auto
@@ -71,7 +71,7 @@ params:
     # Mode - Home info
     homeInfoParams:
       Title: How's it going?
-      Content: I'd like to share some insights on software engineering and write some code, although bugs are always a possibility.
+      Content: Sharing some cool stuff and opinions about software engineering.
 
     # Mode - Profile
     # profileMode:
