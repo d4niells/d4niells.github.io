@@ -5,6 +5,7 @@ description: "Sample article showcasing basic Markdown syntax and formatting for
 tags: ["markdown", "css", "html", "themes"]
 ShowToc: true
 TocOpen: true
+draft: false
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
@@ -244,7 +245,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Twitter Simple Shortcode
 
-{{< twitter_simple 1085870671291310081 >}}
+{{< twitter_simple user="daniel0liveir4" id="1085870671291310081" >}}
 
 <br>
 

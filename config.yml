@@ -64,13 +64,14 @@ params:
     ShowCodeCopyButtons: true
     displayFullLangName: true
     disableSpecial1stPost: false
+    showPageNums: true
     ShowRssButtonInSectionTermList: true
     # images: ["papermod-cover.png"]
 
     # Mode - Home info
     homeInfoParams:
       Title: How's it going?
-      Content: Welcome to the jungle
+      Content: I'd like to share some insights on software engineering and write some code, although bugs are always a possibility.
 
     # Mode - Profile
     # profileMode:
@@ -89,17 +90,26 @@ params:
 
     # Social icons
     socialIcons:
-      - name: Github
-        url: https://github.com/Daniel0liver
-      - name: Twitter
-        url: https://twitter.com/daniel0liveir4
-      - name: Linkedin
-        url: https://www.linkedin.com/in/daniel0liver
+      - name: github
+        title: Github
+        url: https://github.com/d4niells
+      - name: x
+        title: X
+        url: https://x.com/daniel0liveir4
+      - name: linkedin
+        title: Linkedin
+        url: https://www.linkedin.com/in/daniel0liveir4
+      - name: hackerrank
+        title: HackerRank
+        url: https://www.hackerrank.com/profile/daniel0liveir4
+      - name: leetcode
+        title: LeetCode
+        url: https://leetcode.com/daniel0liveir4/
 
-    # editPost:
-    #   appendFilePath: true 
-    #   Text: "Suggest Changes"
-    #   URL: "https://github.com/daniel0liver/danieloliveira.com/tree/main/content"
+    editPost:
+      appendFilePath: true 
+      Text: "Suggest Changes"
+      URL: "https://github.com/d4niells/d4niells.github.io/tree/main/content"
 
     # label:
     #   text: "Home"
