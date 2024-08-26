@@ -93,9 +93,6 @@ params:
       - name: github
         title: Github
         url: https://github.com/d4niells
-      - name: x
-        title: X
-        url: https://x.com/daniel0liveir4
       - name: linkedin
         title: Linkedin
         url: https://www.linkedin.com/in/daniel0liveir4
