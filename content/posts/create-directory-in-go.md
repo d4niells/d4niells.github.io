@@ -121,7 +121,7 @@ The values are additive, so:
 
 In general, 0755 is a safer and more restrictive permission setting, while 0777 is more permissive and should be used with caution.
 
-## 3. Error Handling
+## 4. Error Handling
 
 When creating directories, it's important to handle errors appropriately. Errors can occur
 for various reasons, such as if the directory already exists or if there are permission
@@ -144,7 +144,7 @@ if err := os.Mkdir("newdir", 0755); err != nil {
 
 ```
 
-## 4. Best Practices
+## 5. Best Practices
 
 - <b>Check Directory Existence:</b> Before attempting to create a directory, consider checking if
 it already exists using os.Stat.
@@ -172,6 +172,6 @@ to clean them up when the function exits.
 Be mindful of the permissions you set, especially when dealing with sensitive data. Avoid 
 using overly permissive settings unless necessary.
 
-## 5. Conclusion
+## 6. Conclusion
 
 Creating directories in Go is simple and efficient with the os.Mkdir and os.MkdirAll functions. By understanding directory permissions and incorporating error handling, you can write robust code that manages directories effectively. Remember to follow best practices, such as checking for the existence of directories before creation and cleaning up temporary directories, to ensure your Go applications work smoothly and securely.
