@@ -95,13 +95,13 @@ params:
         url: https://github.com/d4niells
       - name: linkedin
         title: Linkedin
-        url: https://www.linkedin.com/in/daniel0liveir4
+        url: https://www.linkedin.com/in/d4niells
       - name: hackerrank
         title: HackerRank
-        url: https://www.hackerrank.com/profile/daniel0liveir4
+        url: https://www.hackerrank.com/profile/d4niells
       - name: leetcode
         title: LeetCode
-        url: https://leetcode.com/daniel0liveir4/
+        url: https://leetcode.com/d4niells
 
     editPost:
       appendFilePath: true 
